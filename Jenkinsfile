@@ -8,7 +8,7 @@ pipeline {
         stages {
             stage('Checkout') {
               steps {
-                  git branch: 'main', url: 'https://github.com/tushir-pruthi/terragoat'
+                  git branch: 'master', url: 'https://github.com/tushir-pruthi/terragoat'
                   stash includes: '**/*', name: 'source'
               }
             }
